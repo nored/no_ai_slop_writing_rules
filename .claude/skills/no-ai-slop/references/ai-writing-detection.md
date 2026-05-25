@@ -354,9 +354,8 @@ Different AI model families produce distinct stylistic fingerprints based on the
 ### Exclusion Zones
 Lexical scans must NOT flag text inside:
 - Direct quotes (`"..."`) from cited sources
-- `<ref>` tag contents (citation text, template fields)
-- `{{Cite web}}` `|title=` and `|author=` values
-- Wikitext comments (`<!-- -->`)
+- Titles, names, and other verbatim values taken from a source
+- Code, configuration, or markup that is being shown as an example
 
 ### Context-Aware Severity
 If a banned word appears immediately adjacent to specific named entities (proper nouns, statute numbers, dates, dollar amounts), it is more likely being used with technical meaning than as AI filler. Reduce flag severity.
